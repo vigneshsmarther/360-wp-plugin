@@ -11,14 +11,17 @@ if (!defined('ABSPATH')) {
                 <h3 class="preview-title"><?php echo esc_html($atts['title']); ?><span class="red-dot"></span></h3>
                 <p class="preview-description"><?php echo esc_html($atts['description']); ?></p>
                 <div class="preview-alert">
-                    <span>Maximum upload size 5MB</span>
+                    <span>Maximum upload size 5MB. Only JPG, PNG, and GIF files are supported.</span>
                 </div>
                 <div class="preview-buttons">
                     <a id="btn-preview-sides" class="preview-button" href="#">UPLOAD SIDES</a>
-                    <input type="file" id="preview_file_sides" class="hidden-file-input">
+                    <input type="file" id="preview_file_sides" class="hidden-file-input" accept="image/jpeg,image/png,image/gif">
 
                     <a id="btn-preview-back" class="preview-button" href="#">UPLOAD BACK</a>
-                    <input type="file" id="preview_file_back" class="hidden-file-input">
+                    <input type="file" id="preview_file_back" class="hidden-file-input" accept="image/jpeg,image/png,image/gif">
+                </div>
+                <div>
+                    <p class="preview-description">Click and drag the truck to rotate it and see it from all angles.</p>
                 </div>
             </div>
             <div class="preview-viewer-column">
